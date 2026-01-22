@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mythical Creatures Explorer</title>
+    <link rel="stylesheet" href="mythicalCreature.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mythical Creatures Explorer</h1>
+        <nav>
+            <button class="active " data-target="home" id="home-btn">Home</button>
+            <button data-target="creatures" id="creature-btn">Creatures</button>
+        </nav>
+    </header>
+
+    <main id="home-page">
+        <section id="home" class="active">
+            <div class="hero">
+                <h2>Discover Legendary Beings</h2>
+                <p>
+                    Journey through myths and legends from cultures around the world.
+                    Explore iconic creatures, learn their origins, and track your
+                    exploration progress as you uncover their stories.
+                </p>
+                <button id="startExploring">Your Progress</button>
+                <div id="progress-bar">
+                <div id="progress"></div>    
+                </div>
+                <div id="percentage">0% Explored</div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <section id="creatures-page">
+            
+    </section>
+
+    <div class="wdth">
+        <div class="modal-overlay hide" id="modalOverlay">
+            <div class="flx">
+
+                <h1 id="modalName"></h1>
+                <button class="close-btn" id="closeModal">❌</button>
+            </div>
+            <div class="modal">
+
+                <img src="" alt="" id="modal-image">
+                <div>
+                    <h2 id="modalOrigin"></h2>
+                    <p id="modalDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="mythicalCreature.js">
+
+
+    </script>
+</body>
+
+</html>
